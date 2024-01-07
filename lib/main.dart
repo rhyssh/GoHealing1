@@ -3,6 +3,7 @@ import "package:firebase_core/firebase_core.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/firebase_options.dart";
 // HASIL FITURRRRRRRRRRRR
+// menambah dari branch fitur
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
