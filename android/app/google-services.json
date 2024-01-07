@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97033622378",
+    "project_id": "gohealing-d35b5",
+    "storage_bucket": "gohealing-d35b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97033622378:android:6070571dc9da40a1120b13",
+        "android_client_info": {
+          "package_name": "com.example.gohealing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZZW0h7S2vcFbRF1qM0AXgzT6PmYmCwsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
