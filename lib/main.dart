@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:firebase_core/firebase_core.dart";
+import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/firebase_options.dart";
 // Semisal dari Reiki menambah di baris ini
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
+      home: BottomConvexBarr(),
     );
   }
 }
