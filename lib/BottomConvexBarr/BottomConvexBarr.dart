@@ -3,7 +3,6 @@ import 'dart:math';
 import "package:flutter/material.dart";
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:gohealing/User/pages/Home/HomePage.dart';
-import 'package:gohealing/User/pages/ListWisata.dart';
 import 'package:gohealing/User/pages/ListWisataPage.dart';
 
 class BottomConvexBarr extends StatefulWidget {
@@ -18,10 +17,10 @@ class _BottomConvexBarrState extends State<BottomConvexBarr> {
 
   @override
   List<Widget> widgets = [
-    ListWisataPage(),
     Center(
       child: Text("Menu Souvenir"),
     ),
+    ListWisataPage(),
     HomePage(),
     Center(
       child: Text("Menu Keranjang"),
@@ -35,18 +34,19 @@ class _BottomConvexBarrState extends State<BottomConvexBarr> {
     return Scaffold(
         body: widgets[currIndex],
         bottomNavigationBar: Container(
-          // padding: EdgeInsets.only(bottom: 20, top: 20),
-          // color: Colors.teal,
+          
           child: ConvexAppBar( 
+            
             initialActiveIndex: currIndex,
-            backgroundColor: Colors.teal,
+            backgroundColor: Color(0xFF18227B),
             height: 70,
+            color: Colors.white,
             items: [
-              TabItem(icon: Icons.map_outlined, title: 'Wisata'),
-              TabItem(icon: Icons.source_rounded, title: 'Souvenir'),
+              TabItem(icon: Icons.card_giftcard_rounded, title: 'Souvenir'),
+              TabItem(icon: Icons.search, title: 'Wisata'),
               TabItem(icon: Icons.home,  title: 'Home' ),
-              TabItem(icon: Icons.shopify_rounded, title: 'Keranjang'),
-              TabItem(icon: Icons.people, title: 'Profile'),
+              TabItem(icon: Icons.list_alt_sharp, title: 'Keranjang'),
+              TabItem(icon: Icons.person, title: 'Profile'),
             ],
             onTap: (int i) {
               setState(() {

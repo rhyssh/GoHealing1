@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:gohealing/User/pages/ListWisata.dart";
+import "package:gohealing/User/pages/ListWisataPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 
 class RegisterPage extends StatefulWidget {
@@ -53,7 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ListWisata(),
+                      builder: (context) => ListWisataPage(),
                     ));
               },
               child: Text(

@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import "package:gohealing/User/pages/ListWisata.dart";
 import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";
 
 class LoginPage extends StatefulWidget {
