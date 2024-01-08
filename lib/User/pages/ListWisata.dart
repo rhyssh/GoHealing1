@@ -7,13 +7,6 @@ class ListWisata extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            color: Colors.white,
-            icon: Icon(Icons.arrow_back)),
-            
         title: Text(
           "LIST WISATA",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
