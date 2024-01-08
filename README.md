@@ -24,3 +24,9 @@ memitigasi dampak negatif terhadap kehidupan yang ada di darat, seperti mendukun
 pelestarian habitat alami dan mempertahankan keanekaragaman hayati.
 Pada akhirnya, pengguna nantinya dapat menikmati pengalaman memesan tiket yang cepat dan 
 efisien, serta menjelajahi wisata dengan lebih mudah dan menyenangkan
+
+Anggota tim kami terdiri dari
+1. Reiki Aziz Yoga Utama **(Ketua & Hacker)**
+2. Krisna Kukuh Wijaya **(Hustler)**
+3. Ahmad Aziz Fauzi **(Hacker)**
+4. Yulianto Aryaseta **(Hipster)**
