@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
+import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 
 class ListWisataPage extends StatefulWidget {
@@ -61,7 +62,10 @@ class _ListWisataPageState extends State<ListWisataPage> {
                         ),
                         Center(
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              print("mengklik profil pojok");
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage(),));
+                            },
                             icon: Icon(
                               Icons.person_2_sharp,
                               size: 30,
