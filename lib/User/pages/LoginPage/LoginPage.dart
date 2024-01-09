@@ -49,14 +49,14 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 width: double.infinity,
                 child: TextField(
-                  controller: emailC,
-                  textInputAction: TextInputAction.next,
+                  controller: passC,
+                  textInputAction: TextInputAction.done,
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                      label: Text("Email"),
+                      label: Text("Password"),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      prefixIcon: Icon(Icons.email),
+                      prefixIcon: Icon(Icons.key),
                       contentPadding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 20)),
                 ),
