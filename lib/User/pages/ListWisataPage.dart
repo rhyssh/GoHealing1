@@ -17,7 +17,8 @@ class _ListWisataPageState extends State<ListWisataPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-        stream: FirebaseFirestore.instance.collection("tempatWisata").snapshots(),
+        stream:
+            FirebaseFirestore.instance.collection("tempatWisata").snapshots(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -46,25 +47,25 @@ class _ListWisataPageState extends State<ListWisataPage> {
                             Text(
                               "Temukan",
                               style: TextStyle(
-                                fontSize: 24,
-                                color: Color(0xFF2839CD)
-
-                              ),
+                                  fontSize: 24, color: Color(0xFF2839CD)),
                             ),
                             Text(
                               "Wisata Anda",
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24,
-                                height: 1,
-                                color: Color(0xFF2839CD)
-                              ),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                  height: 1,
+                                  color: Color(0xFF2839CD)),
                             ),
                           ],
                         ),
                         Center(
-                          child: Icon(
-                            Icons.person_3_sharp,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.person_2_sharp,
+                              size: 30,
+                            ),
                           ),
                         ),
                       ],
@@ -95,35 +96,44 @@ class _ListWisataPageState extends State<ListWisataPage> {
                   ),
                 ),
                 Expanded(
-                child: ListView.builder(
-                  itemCount: _data.length,
-                  itemBuilder: (context, index) {
-                    // agar
-                    return Column(
-                      children: [
-                        WidgetCardWisata(
-                          onTap: () {
-                            // Navigasi ke halaman lain (ganti dengan sesuai kebutuhan)
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => LoginPage(),
-                              ), // Ganti YourDestinationPage dengan halaman yang sesuai
-                            );
-                          },
-                          // Set data dari Firestore ke WidgetCardWisata
-                          namaTempat: _data[index].data()?["tempatWisata"].toString() ?? "",
-                          lokasi: _data[index].data()?["lokasi"].toString() ?? "",
-                          harga: _data[index].data()?["harga"].toString() ?? "",
-                          jarak: _data[index].data()?["jarak"].toString() ?? "",
-                          rating: _data[index].data()?["rating"].toString() ?? "",
-                          gambar: _data[index].data()?["gambar"].toString() ?? "",
-                        ),
-                        SizedBox(height: 20), // Ganti dengan jarak yang diinginkan
-                      ],
-                    );
-                  },
-                ),
+                  child: ListView.builder(
+                    itemCount: _data.length,
+                    itemBuilder: (context, index) {
+                      // agar
+                      return Column(
+                        children: [
+                          WidgetCardWisata(
+                            onTap: () {
+                              // Navigasi ke halaman lain (ganti dengan sesuai kebutuhan)
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LoginPage(),
+                                ), // Ganti YourDestinationPage dengan halaman yang sesuai
+                              );
+                            },
+                            // Set data dari Firestore ke WidgetCardWisata
+                            namaTempat: _data[index]
+                                    .data()?["tempatWisata"]
+                                    .toString() ??
+                                "",
+                            lokasi:
+                                _data[index].data()?["lokasi"].toString() ?? "",
+                            harga:
+                                _data[index].data()?["harga"].toString() ?? "",
+                            jarak:
+                                _data[index].data()?["jarak"].toString() ?? "",
+                            rating:
+                                _data[index].data()?["rating"].toString() ?? "",
+                            gambar:
+                                _data[index].data()?["gambar"].toString() ?? "",
+                          ),
+                          SizedBox(
+                              height: 20), // Ganti dengan jarak yang diinginkan
+                        ],
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
