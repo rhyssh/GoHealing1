@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gohealing/BottomConvexBarr/BottomConvexBarr.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 
@@ -25,6 +26,9 @@ class _DeveloperPageState extends State<DeveloperPage> {
           "DEVELOPER PAGE",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
+        actions: [IconButton(onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder:  (context) => BottomConvexBarr(),));
+        }, icon: Icon(Icons.logout, color: Colors.amber[900],))],
         backgroundColor: Colors.blue,
       ),
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
