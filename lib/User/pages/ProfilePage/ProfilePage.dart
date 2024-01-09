@@ -23,14 +23,13 @@ class _ProfilePageState extends State<ProfilePage> {
     Center(
       child: Text("Menu Keranjang"),
     ),
-    ProfilePage()
+    Center(
+      child: Text("PROFILE PAGE"),
+    )
   ];
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        // Gantilah dengan widget yang sesuai untuk halaman profil Anda
-        child: Text('Halaman Profil'),
-      ),
+      body: widgets[currIndex],
       bottomNavigationBar: Container(
         child: ConvexAppBar(
           initialActiveIndex: currIndex,
