@@ -30,3 +30,9 @@ Anggota tim kami terdiri dari
 2. Krisna Kukuh Wijaya **(Hustler)**
 3. Ahmad Aziz Fauzi **(Hacker)**
 4. Yulianto Aryaseta **(Hipster)**
+<br>
+Beberapa fitur utama pada aplikasi kami adalah :
+<br>
+1. Pemesanan Tiket 
+<br>
+2. Pemesanan Souvenir
