@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: BottomConvexBarr(),
-      home: DeveloperPage(),
+      home: BottomConvexBarr(),
     );
   }
 }

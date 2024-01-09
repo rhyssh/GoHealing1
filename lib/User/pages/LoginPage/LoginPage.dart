@@ -12,8 +12,15 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("LOGINPAGE"),
+        child: TextField(
+          decoration: InputDecoration(
+            filled: true,
+            fillColor: Colors.blue
+          ),
+        ),
+        
       ),
+      
     );
   }
 }
