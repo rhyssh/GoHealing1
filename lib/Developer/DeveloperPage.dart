@@ -17,7 +17,7 @@ class DeveloperPage extends StatelessWidget {
       ),
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
         stream:
-            FirebaseFirestore.instance.collection("tempatWisata").snapshots(),
+            FirebaseFirestore.instance.collection("DB_wisata").snapshots(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -72,7 +72,7 @@ class DeveloperPage extends StatelessWidget {
           };
 
           FirebaseFirestore.instance
-              .collection("tempatWisata")
+              .collection("DB_wisata")
               .add(wisata1)
               .then((DocumentReference doc) =>
                   print('DocumentSnapshot added with ID: ${doc.id}'));
@@ -88,7 +88,7 @@ class DeveloperPage extends StatelessWidget {
           };
 
           FirebaseFirestore.instance
-              .collection("tempatWisata")
+              .collection("DB_wisata")
               .add(wisata2)
               .then((DocumentReference doc) =>
                   print('DocumentSnapshot added with ID: ${doc.id}'));
@@ -104,7 +104,7 @@ class DeveloperPage extends StatelessWidget {
           };
 
           FirebaseFirestore.instance
-              .collection("tempatWisata")
+              .collection("DB_wisata")
               .add(wisata3)
               .then((DocumentReference doc) =>
                   print('DocumentSnapshot added with ID: ${doc.id}'));
@@ -120,7 +120,7 @@ class DeveloperPage extends StatelessWidget {
           };
 
           FirebaseFirestore.instance
-              .collection("tempatWisata")
+              .collection("DB_wisata")
               .add(wisata4)
               .then((DocumentReference doc) =>
                   print('DocumentSnapshot added with ID: ${doc.id}'));

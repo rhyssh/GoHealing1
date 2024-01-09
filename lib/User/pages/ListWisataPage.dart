@@ -1,9 +1,12 @@
+// File: ListWisataPage.dart
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gohealing/User/pages/DetailWisata/DetailWisataPage.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
+import 'package:gohealing/data/DBwisata.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 class ListWisataPage extends StatefulWidget {
   const ListWisataPage({Key? key}) : super(key: key);
 
@@ -13,13 +16,13 @@ class ListWisataPage extends StatefulWidget {
 
 class _ListWisataPageState extends State<ListWisataPage> {
   TextEditingController searchC = TextEditingController();
+  final DBWisata _dbWisata = DBWisata();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-        stream:
-            FirebaseFirestore.instance.collection("tempatWisata").snapshots(),
+        stream: _dbWisata.getWisataStream(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -30,7 +33,7 @@ class _ListWisataPageState extends State<ListWisataPage> {
           var _data = snapshot.data!.docs;
 
           return Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
             child: Column(
               children: [
                 Container(
@@ -53,8 +56,9 @@ class _ListWisataPageState extends State<ListWisataPage> {
                             Text(
                               "Wisata Anda",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w800,
                                   fontSize: 24,
+                                  fontFamily: GoogleFonts.kanit().fontFamily,
                                   height: 1,
                                   color: Color(0xFF2839CD)),
                             ),
@@ -64,7 +68,12 @@ class _ListWisataPageState extends State<ListWisataPage> {
                           child: IconButton(
                             onPressed: () {
                               print("mengklik profil pojok");
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage(),));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ProfilePage(),
+                                ),
+                              );
                             },
                             icon: Icon(
                               Icons.person_2_sharp,
@@ -103,20 +112,19 @@ class _ListWisataPageState extends State<ListWisataPage> {
                   child: ListView.builder(
                     itemCount: _data.length,
                     itemBuilder: (context, index) {
-                      // agar
                       return Column(
                         children: [
                           WidgetCardWisata(
                             onTap: () {
-                              // Navigasi ke halaman lain (ganti dengan sesuai kebutuhan)
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => LoginPage(),
-                                ), // Ganti YourDestinationPage dengan halaman yang sesuai
+                                  builder: (context) => DetailWisataPage(
+                                    tempatWisataData: _data[index].data(),
+                                  ),
+                                ),
                               );
                             },
-                            // Set data dari Firestore ke WidgetCardWisata
                             namaTempat: _data[index]
                                     .data()?["tempatWisata"]
                                     .toString() ??
@@ -132,8 +140,7 @@ class _ListWisataPageState extends State<ListWisataPage> {
                             gambar:
                                 _data[index].data()?["gambar"].toString() ?? "",
                           ),
-                          SizedBox(
-                              height: 20), // Ganti dengan jarak yang diinginkan
+                          SizedBox(height: 20),
                         ],
                       );
                     },
