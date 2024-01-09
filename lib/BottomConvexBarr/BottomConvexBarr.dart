@@ -4,6 +4,7 @@ import "package:flutter/material.dart";
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:gohealing/User/pages/Home/HomePage.dart';
 import 'package:gohealing/User/pages/ListWisataPage.dart';
+import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
 
 class BottomConvexBarr extends StatefulWidget {
   const BottomConvexBarr({super.key});
@@ -25,18 +26,14 @@ class _BottomConvexBarrState extends State<BottomConvexBarr> {
     Center(
       child: Text("Menu Keranjang"),
     ),
-    Center(
-      child: Text("Menu Profile"),
-    ),
+    ProfilePage()
   ];
 
   Widget build(BuildContext context) {
     return Scaffold(
         body: widgets[currIndex],
         bottomNavigationBar: Container(
-          
-          child: ConvexAppBar( 
-            
+          child: ConvexAppBar(
             initialActiveIndex: currIndex,
             backgroundColor: Color(0xFF18227B),
             height: 70,
@@ -44,7 +41,7 @@ class _BottomConvexBarrState extends State<BottomConvexBarr> {
             items: [
               TabItem(icon: Icons.card_giftcard_rounded, title: 'Souvenir'),
               TabItem(icon: Icons.search, title: 'Wisata'),
-              TabItem(icon: Icons.home,  title: 'Home' ),
+              TabItem(icon: Icons.home, title: 'Home'),
               TabItem(icon: Icons.list_alt_sharp, title: 'Keranjang'),
               TabItem(icon: Icons.person, title: 'Profile'),
             ],

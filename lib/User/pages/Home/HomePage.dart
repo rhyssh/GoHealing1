@@ -1,4 +1,6 @@
 import "package:flutter/material.dart";
+import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
+import "package:gohealing/Developer/DeveloperPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";
 
@@ -20,6 +22,9 @@ class _HomePageState extends State<HomePage> {
           "ROUTER SEMENTARA",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
+         actions: [IconButton(onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder:  (context) => DeveloperPage(),));
+        }, icon: Icon(Icons.logout, color: Colors.amber[900],))],
       ),
       body: Center(
         child: Column(

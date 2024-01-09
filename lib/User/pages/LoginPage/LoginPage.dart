@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gohealing/User/pages/RegisterPage/RegisterPage.dart';
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:gohealing/User/widgets/shapeOfLogin.dart';
 
 class LoginPage extends StatefulWidget {

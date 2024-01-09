@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gohealing/BottomConvexBarr/BottomConvexBarr.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 
-class DeveloperPage extends StatelessWidget {
+class DeveloperPage extends StatefulWidget {
+  @override
+  _DeveloperPageState createState() => _DeveloperPageState();
+}
+
+class _DeveloperPageState extends State<DeveloperPage> {
+  TextEditingController tempatController = TextEditingController();
+  TextEditingController lokasiController = TextEditingController();
+  TextEditingController ratingController = TextEditingController();
+  TextEditingController jarakController = TextEditingController();
+  TextEditingController hargaController = TextEditingController();
+  TextEditingController gambarController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,11 +26,13 @@ class DeveloperPage extends StatelessWidget {
           "DEVELOPER PAGE",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
+        actions: [IconButton(onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder:  (context) => BottomConvexBarr(),));
+        }, icon: Icon(Icons.logout, color: Colors.amber[900],))],
         backgroundColor: Colors.blue,
       ),
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-        stream:
-            FirebaseFirestore.instance.collection("tempatWisata").snapshots(),
+        stream: FirebaseFirestore.instance.collection("DB_wisata").snapshots(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -61,69 +76,83 @@ class DeveloperPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          final wisata1 = <String, dynamic>{
-            "tempatWisata": "Candi Borobudur",
-            "lokasi": "Borobudur, Magelang",
-            "rating": 5,
-            "jarak": "112 KM",
-            "harga": "250.000",
-            "gambar":
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/ef/47/1c/borobudur-temple.jpg?w=500&h=400&s=1"
-          };
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text("Tambah Data Wisata"),
+                content: Container(
+                  width: double.maxFinite,
+                  child: ListView(
+                    shrinkWrap: true,
+                    children: [
+                      TextField(
+                        controller: tempatController,
+                        decoration: InputDecoration(labelText: 'Tempat Wisata'),
+                      ),
+                      TextField(
+                        controller: lokasiController,
+                        decoration: InputDecoration(labelText: 'Lokasi'),
+                      ),
+                      TextField(
+                        controller: ratingController,
+                        decoration: InputDecoration(labelText: 'Rating'),
+                      ),
+                      TextField(
+                        controller: jarakController,
+                        decoration: InputDecoration(labelText: 'Jarak'),
+                      ),
+                      TextField(
+                        controller: hargaController,
+                        decoration: InputDecoration(labelText: 'Harga'),
+                      ),
+                      TextField(
+                        controller: gambarController,
+                        decoration: InputDecoration(labelText: 'URL Gambar'),
+                      ),
+                    ],
+                  ),
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text("Batal"),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      final wisata = <String, dynamic>{
+                        "tempatWisata": tempatController.text,
+                        "lokasi": lokasiController.text,
+                        "rating": int.parse(ratingController.text),
+                        "jarak": jarakController.text,
+                        "harga": hargaController.text,
+                        "gambar": gambarController.text,
+                      };
 
-          FirebaseFirestore.instance
-              .collection("tempatWisata")
-              .add(wisata1)
-              .then((DocumentReference doc) =>
-                  print('DocumentSnapshot added with ID: ${doc.id}'));
+                      FirebaseFirestore.instance
+                          .collection("DB_wisata")
+                          .add(wisata)
+                          .then((DocumentReference doc) =>
+                              print('DocumentSnapshot added with ID: ${doc.id}'));
 
-          final wisata2 = <String, dynamic>{
-            "tempatWisata": "Gedung Lawang Sewu",
-            "lokasi": "Jl. Pemuda, Semarang",
-            "rating": 4,
-            "jarak": "10 KM",
-            "harga": "50.000",
-            "gambar":
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/9f/a8/2018-02-02-01-34-02-largejpg.jpg?w=500&h=400&s=1"
-          };
+                      // Membersihkan nilai di kontroler setelah ditambahkan
+                      tempatController.clear();
+                      lokasiController.clear();
+                      ratingController.clear();
+                      jarakController.clear();
+                      hargaController.clear();
+                      gambarController.clear();
 
-          FirebaseFirestore.instance
-              .collection("tempatWisata")
-              .add(wisata2)
-              .then((DocumentReference doc) =>
-                  print('DocumentSnapshot added with ID: ${doc.id}'));
-
-          final wisata3 = <String, dynamic>{
-            "tempatWisata": "Kelenteng Sam Po Kon",
-            "lokasi": "Jl. Simongan, Semarang",
-            "rating": 4,
-            "jarak": "15 KM",
-            "harga": "15.000",
-            "gambar":
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/aa/3c/c9/photo3jpg.jpg?w=500&h=-1&s=1"
-          };
-
-          FirebaseFirestore.instance
-              .collection("tempatWisata")
-              .add(wisata3)
-              .then((DocumentReference doc) =>
-                  print('DocumentSnapshot added with ID: ${doc.id}'));
-
-          final wisata4 = <String, dynamic>{
-            "tempatWisata": "Dieng Plateau",
-            "lokasi": "Bakal Buntu, Banjarnegara",
-            "rating": 4,
-            "jarak": "75 KM",
-            "harga": "20.000",
-            "gambar":
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/76/9a/93/dataran-tinggi-dieng.jpg?w=500&h=400&s=1"
-          };
-
-          FirebaseFirestore.instance
-              .collection("tempatWisata")
-              .add(wisata4)
-              .then((DocumentReference doc) =>
-                  print('DocumentSnapshot added with ID: ${doc.id}'));
+                      Navigator.pop(context);
+                    },
+                    child: Text("Tambah"),
+                  ),
+                ],
+              );
+            },
+          );
         },
         child: Icon(Icons.add),
       ),
