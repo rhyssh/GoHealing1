@@ -4,18 +4,20 @@ import 'package:gohealing/BottomConvexBarr/BottomConvexBarr.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 
-class DeveloperPage extends StatefulWidget {
+class DevWisataPage extends StatefulWidget {
   @override
-  _DeveloperPageState createState() => _DeveloperPageState();
+  _DevWisataPageState createState() => _DevWisataPageState();
 }
 
-class _DeveloperPageState extends State<DeveloperPage> {
+class _DevWisataPageState extends State<DevWisataPage> {
   TextEditingController tempatController = TextEditingController();
   TextEditingController lokasiController = TextEditingController();
   TextEditingController ratingController = TextEditingController();
   TextEditingController jarakController = TextEditingController();
   TextEditingController hargaController = TextEditingController();
   TextEditingController gambarController = TextEditingController();
+  TextEditingController reviewsController = TextEditingController();
+  TextEditingController deskripsiController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "DEVELOPER PAGE",
+          "DEV WISATA PAGE",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         actions: [IconButton(onPressed: () {
@@ -89,6 +91,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                       TextField(
                         controller: tempatController,
                         decoration: InputDecoration(labelText: 'Tempat Wisata'),
+                        maxLength: 18,
                       ),
                       TextField(
                         controller: lokasiController,
@@ -105,6 +108,14 @@ class _DeveloperPageState extends State<DeveloperPage> {
                       TextField(
                         controller: hargaController,
                         decoration: InputDecoration(labelText: 'Harga'),
+                      ),
+                      TextField(
+                        controller: reviewsController,
+                        decoration: InputDecoration(labelText: 'Reviews'),
+                      ),
+                      TextField(
+                        controller: deskripsiController,
+                        decoration: InputDecoration(labelText: 'Deskripsi'),
                       ),
                       TextField(
                         controller: gambarController,
@@ -129,6 +140,8 @@ class _DeveloperPageState extends State<DeveloperPage> {
                         "jarak": jarakController.text,
                         "harga": hargaController.text,
                         "gambar": gambarController.text,
+                        "reviews": reviewsController.text,
+                        "deskripsi": deskripsiController.text,
                       };
 
                       FirebaseFirestore.instance
@@ -144,6 +157,8 @@ class _DeveloperPageState extends State<DeveloperPage> {
                       jarakController.clear();
                       hargaController.clear();
                       gambarController.clear();
+                      reviewsController.clear();
+                      deskripsiController.clear();
 
                       Navigator.pop(context);
                     },

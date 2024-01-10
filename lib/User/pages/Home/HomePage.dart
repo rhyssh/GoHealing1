@@ -1,6 +1,9 @@
 import "package:flutter/material.dart";
 import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
-import "package:gohealing/Developer/DeveloperPage.dart";
+import "package:gohealing/Developer/DevSouvenirPage.dart";
+import 'package:gohealing/Developer/DevWisataPage.dart';
+import "package:gohealing/Developer/Developerr.dart";
+import "package:gohealing/User/pages/ListWisataPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";
 
@@ -12,6 +15,21 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Color textColor = Colors.blue;
+
+  void changeColor() {
+    setState(() {
+      textColor = Colors.red;
+    });
+
+    // Delay 1 detik dan kembalikan warna ke biru
+    Future.delayed(Duration(seconds: 1), () {
+      setState(() {
+        textColor = Colors.blue;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,9 +40,20 @@ class _HomePageState extends State<HomePage> {
           "ROUTER SEMENTARA",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
-         actions: [IconButton(onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder:  (context) => DeveloperPage(),));
-        }, icon: Icon(Icons.logout, color: Colors.amber[900],))],
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Developerr(),
+                    ));
+              },
+              icon: Icon(
+                Icons.logout,
+                color: Colors.amber[900],
+              ))
+        ],
       ),
       body: Center(
         child: Column(
@@ -66,6 +95,24 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.white),
                 )),
+            GestureDetector(
+              onTap: () {
+                // Aksi yang ingin diambil saat teks diklik
+                changeColor();
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterPage(),
+                    ));
+              },
+              child: Text(
+                'Klik saya!',
+                style: TextStyle(
+                  color: textColor,
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
           ],
         ),
       ),
