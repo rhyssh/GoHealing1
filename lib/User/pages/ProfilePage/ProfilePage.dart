@@ -14,7 +14,7 @@ class _ProfilePageState extends State<ProfilePage> {
   int currIndex = 4;
 
   @override
-   List<Widget> widgets = [
+  List<Widget> widgets = [
     Center(
       child: Text("Menu Souvenir"),
     ),
