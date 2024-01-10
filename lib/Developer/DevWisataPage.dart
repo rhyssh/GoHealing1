@@ -4,12 +4,12 @@ import 'package:gohealing/BottomConvexBarr/BottomConvexBarr.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
 import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 
-class DeveloperPage extends StatefulWidget {
+class DevWisataPage extends StatefulWidget {
   @override
-  _DeveloperPageState createState() => _DeveloperPageState();
+  _DevWisataPageState createState() => _DevWisataPageState();
 }
 
-class _DeveloperPageState extends State<DeveloperPage> {
+class _DevWisataPageState extends State<DevWisataPage> {
   TextEditingController tempatController = TextEditingController();
   TextEditingController lokasiController = TextEditingController();
   TextEditingController ratingController = TextEditingController();
@@ -23,7 +23,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "DEVELOPER PAGE",
+          "DEV WISATA PAGE",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         actions: [IconButton(onPressed: () {
@@ -89,6 +89,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                       TextField(
                         controller: tempatController,
                         decoration: InputDecoration(labelText: 'Tempat Wisata'),
+                        maxLength: 20,
                       ),
                       TextField(
                         controller: lokasiController,

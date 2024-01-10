@@ -1,28 +1,29 @@
-// File: ListWisataPage.dart
+// File: ListSouvenirPage.dart
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gohealing/User/pages/Detail/Souvenir/DetailSouvenirPage.dart';
 import 'package:gohealing/User/pages/Detail/Wisata/DetailWisataPage.dart';
-import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
-import 'package:gohealing/data/DBwisata.dart';
+import 'package:gohealing/User/widgets/WidgetCardSouvenir.dart';
+import 'package:gohealing/data/DBsouvenir.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
-import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
 import 'package:google_fonts/google_fonts.dart';
-class ListWisataPage extends StatefulWidget {
-  const ListWisataPage({Key? key}) : super(key: key);
+
+class ListSouvenirPage extends StatefulWidget {
+  const ListSouvenirPage({Key? key}) : super(key: key);
 
   @override
-  State<ListWisataPage> createState() => _ListWisataPageState();
+  State<ListSouvenirPage> createState() => _ListSouvenirPageState();
 }
 
-class _ListWisataPageState extends State<ListWisataPage> {
+class _ListSouvenirPageState extends State<ListSouvenirPage> {
   TextEditingController searchC = TextEditingController();
-  final DBWisata _dbWisata = DBWisata();
+  final DBsouvenir _dbSouvenir = DBsouvenir();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-        stream: _dbWisata.getWisataStream(),
+        stream: _dbSouvenir.getWisataStream(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -54,7 +55,7 @@ class _ListWisataPageState extends State<ListWisataPage> {
                                   fontSize: 24, color: Color(0xFF2839CD)),
                             ),
                             Text(
-                              "Wisata Anda",
+                              "Souvenir Anda",
                               style: TextStyle(
                                   fontWeight: FontWeight.w800,
                                   fontSize: 24,
@@ -98,7 +99,6 @@ class _ListWisataPageState extends State<ListWisataPage> {
                       labelText: "Cari di sini",
                       labelStyle: TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.bold
                       ),
                       fillColor: Color(0xFF7E88E1),
                       filled: true,
@@ -119,29 +119,23 @@ class _ListWisataPageState extends State<ListWisataPage> {
                     itemBuilder: (context, index) {
                       return Column(
                         children: [
-                          WidgetCardWisata(
+                          WidgetCardSouvenir(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => DetailWisataPage(
-                                    tempatWisataData: _data[index].data(),
+                                  builder: (context) => DetailSouvenirPage(
+                                    dataSouvenir: _data[index].data(),
                                   ),
                                 ),
                               );
                             },
-                            namaTempat: _data[index]
-                                    .data()?["tempatWisata"]
+                            judulSouvenir: _data[index]
+                                    .data()?["judulSouvenir"]
                                     .toString() ??
                                 "",
-                            lokasi:
-                                _data[index].data()?["lokasi"].toString() ?? "",
                             harga:
                                 _data[index].data()?["harga"].toString() ?? "",
-                            jarak:
-                                _data[index].data()?["jarak"].toString() ?? "",
-                            rating:
-                                _data[index].data()?["rating"].toString() ?? "",
                             gambar:
                                 _data[index].data()?["gambar"].toString() ?? "",
                           ),

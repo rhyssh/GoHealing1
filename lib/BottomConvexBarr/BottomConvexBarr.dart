@@ -1,10 +1,10 @@
-import 'dart:math';
 
 import "package:flutter/material.dart";
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:gohealing/User/pages/Home/HomePage.dart';
 import 'package:gohealing/User/pages/ListWisataPage.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
+import 'package:gohealing/User/pages/Souvenir/ListSouvenirPage.dart';
 
 class BottomConvexBarr extends StatefulWidget {
   const BottomConvexBarr({super.key});
@@ -18,9 +18,7 @@ class _BottomConvexBarrState extends State<BottomConvexBarr> {
 
   @override
   List<Widget> widgets = [
-    Center(
-      child: Text("Menu Souvenir"),
-    ),
+    ListSouvenirPage(),
     ListWisataPage(),
     HomePage(),
     Center(

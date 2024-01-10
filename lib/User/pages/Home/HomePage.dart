@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
-import "package:gohealing/Developer/DeveloperPage.dart";
+import "package:gohealing/Developer/DevSouvenirPage.dart";
+import 'package:gohealing/Developer/DevWisataPage.dart';
+import "package:gohealing/Developer/Developerr.dart";
 import "package:gohealing/User/pages/ListWisataPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";
@@ -44,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DeveloperPage(),
+                      builder: (context) => Developerr(),
                     ));
               },
               icon: Icon(
@@ -97,7 +99,11 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 // Aksi yang ingin diambil saat teks diklik
                 changeColor();
-                Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage(),));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterPage(),
+                    ));
               },
               child: Text(
                 'Klik saya!',
