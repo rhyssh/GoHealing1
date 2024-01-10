@@ -95,7 +95,8 @@ class _ListWisataPageState extends State<ListWisataPage> {
                     textInputAction: TextInputAction.next,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      fillColor: Colors.grey[300],
+                      labelText: "Cari di sini",
+                      fillColor: Color(0xFFBFC4F0),
                       filled: true,
                       contentPadding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 15),

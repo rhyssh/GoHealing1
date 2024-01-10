@@ -28,7 +28,7 @@ class WidgetCardWisata extends StatelessWidget {
         width: double.infinity,
         height: 140,
         decoration: BoxDecoration(
-          color: Colors.grey[300],
+          color: Color(0xFFBFC4F0),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Container(
