@@ -152,12 +152,11 @@ class _LoginPageState extends State<LoginPage> {
                               ));
                         },
                         child: Text(
-                          'Lupa password',
+                          'Lupa password ?',
                           style: TextStyle(
-                            color: textColor,
-                            fontFamily: GoogleFonts.poppins().fontFamily,
-                            fontWeight: FontWeight.w600
-                          ),
+                              color: textColor,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                     ),
@@ -197,7 +196,13 @@ class _LoginPageState extends State<LoginPage> {
                             height: 7,
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RegisterPage(),
+                                  ));
+                            },
                             child: Container(
                               width: 100,
                               height: 30,
