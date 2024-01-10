@@ -30,6 +30,9 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
+                SizedBox(
+                  height: 20,
+                ),
                 Container(
                   padding: EdgeInsets.only(top: 30),
                   child: Text(
@@ -119,6 +122,55 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
+                    Positioned(
+                      right: 10,
+                      bottom: 180,
+                      child: InkWell(
+                        onTap: () {
+                          print('lupa password saya mas..ehehe');
+                        },
+                        splashColor: Colors.red,
+                        child: Container(child: Text('Lupa Password ?')),
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 30,
+                      child: Column(
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: Container(
+                              width: 100,
+                              height: 30,
+                              child: Center(
+                                  child: Text(
+                                'LOGIN',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              )),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 7,
+                          ),
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: Container(
+                              width: 100,
+                              height: 30,
+                              child: Center(
+                                child: Text(
+                                  'REGISTER',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ],
