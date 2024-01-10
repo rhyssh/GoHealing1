@@ -1,33 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:gohealing/User/pages/RegisterPage/RegisterPage.dart';
 import 'package:gohealing/User/widgets/shapeOfLogin.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class LoginPageReiki extends StatefulWidget {
+  const LoginPageReiki({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginPageReiki> createState() => _LoginPageReikiState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageReikiState extends State<LoginPageReiki> {
   TextEditingController emailC = TextEditingController();
   TextEditingController passC = TextEditingController();
-
-  Color textColor = Colors.black;
-
-  void changeColor() {
-    setState(() {
-      textColor = Colors.red;
-    });
-
-    // Delay 1 detik dan kembalikan warna ke biru
-    Future.delayed(Duration(seconds: 1), () {
-      setState(() {
-        textColor = Colors.black;
-      });
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -141,24 +125,12 @@ class _LoginPageState extends State<LoginPage> {
                     Positioned(
                       right: 10,
                       bottom: 180,
-                      child: GestureDetector(
+                      child: InkWell(
                         onTap: () {
-                          // Aksi yang ingin diambil saat teks diklik
-                          changeColor();
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => RegisterPage(),
-                              ));
+                          print('lupa password saya mas..ehehe');
                         },
-                        child: Text(
-                          'Lupa password',
-                          style: TextStyle(
-                            color: textColor,
-                            fontFamily: GoogleFonts.poppins().fontFamily,
-                            fontWeight: FontWeight.w600
-                          ),
-                        ),
+                        splashColor: Colors.red,
+                        child: Container(child: Text('Lupa Password ?')),
                       ),
                     ),
                     Positioned(
@@ -166,31 +138,16 @@ class _LoginPageState extends State<LoginPage> {
                       child: Column(
                         children: [
                           ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFF2839CD),
-                            ),
-                            onPressed: () {
-                              // Your login logic here
-                              print("Login button pressed");
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => RegisterPage(),
-                                  ));
-                            },
+                            onPressed: () {},
                             child: Container(
                               width: 100,
                               height: 30,
                               child: Center(
-                                child: Text(
-                                  'LOGIN',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
+                                  child: Text(
+                                'LOGIN',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              )),
                             ),
                           ),
                           SizedBox(

@@ -4,6 +4,7 @@ import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
 import "package:gohealing/Developer/DeveloperPage.dart";
 import "package:gohealing/User/pages/ListWisataPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
+import "package:gohealing/YangDuluMas/LoginPageReiki.dart";
 import "package:gohealing/firebase_options.dart";
 // Semisal dari Reiki menambah di baris ini
 //  INI ADA TIDAK
@@ -28,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: BottomConvexBarr(),
-      home: BottomConvexBarr(),
+      home: BottomConvexBarr (),
     );
   }
 }
