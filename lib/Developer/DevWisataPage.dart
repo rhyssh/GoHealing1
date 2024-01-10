@@ -16,6 +16,8 @@ class _DevWisataPageState extends State<DevWisataPage> {
   TextEditingController jarakController = TextEditingController();
   TextEditingController hargaController = TextEditingController();
   TextEditingController gambarController = TextEditingController();
+  TextEditingController reviewsController = TextEditingController();
+  TextEditingController deskripsiController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +91,7 @@ class _DevWisataPageState extends State<DevWisataPage> {
                       TextField(
                         controller: tempatController,
                         decoration: InputDecoration(labelText: 'Tempat Wisata'),
-                        maxLength: 20,
+                        maxLength: 18,
                       ),
                       TextField(
                         controller: lokasiController,
@@ -106,6 +108,14 @@ class _DevWisataPageState extends State<DevWisataPage> {
                       TextField(
                         controller: hargaController,
                         decoration: InputDecoration(labelText: 'Harga'),
+                      ),
+                      TextField(
+                        controller: reviewsController,
+                        decoration: InputDecoration(labelText: 'Reviews'),
+                      ),
+                      TextField(
+                        controller: deskripsiController,
+                        decoration: InputDecoration(labelText: 'Deskripsi'),
                       ),
                       TextField(
                         controller: gambarController,
@@ -130,6 +140,8 @@ class _DevWisataPageState extends State<DevWisataPage> {
                         "jarak": jarakController.text,
                         "harga": hargaController.text,
                         "gambar": gambarController.text,
+                        "reviews": reviewsController.text,
+                        "deskripsi": deskripsiController.text,
                       };
 
                       FirebaseFirestore.instance
@@ -145,6 +157,8 @@ class _DevWisataPageState extends State<DevWisataPage> {
                       jarakController.clear();
                       hargaController.clear();
                       gambarController.clear();
+                      reviewsController.clear();
+                      deskripsiController.clear();
 
                       Navigator.pop(context);
                     },

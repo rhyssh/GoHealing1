@@ -12,7 +12,7 @@ class DevLangsungAllWisata extends StatelessWidget {
         "gambar":
             "https://backoffice.konstruksiindo.id/images/posts/large/1689666990_bb8391f730ba479baf81.jpeg",
         "rating": 5,
-        "views" : "10.2k",
+        "reviews" : "10.2k",
         "deskripsi":
             "Candi Borobudur adalah sebuah kompleks candi Buddha yang megah dan terkenal, terletak di Magelang, Jawa Tengah, Indonesia. Dibangun pada abad ke-9 oleh dinasti Sailendra, candi ini merupakan salah satu keajaiban arsitektur Buddha dan situs keagamaan terbesar di dunia. Borobudur memiliki struktur bertingkat dengan tujuh tingkat teras dan candi utama di puncaknya. Di dinding-dindingnya terdapat relief yang menceritakan kisah-kisah Buddha dan ajaran-ajaran Buddhis. Candi Borobudur juga telah diakui sebagai Situs Warisan Dunia UNESCO, mencerminkan kejayaan seni dan kepercayaan Buddha pada masa lalu. "
       },
@@ -24,7 +24,7 @@ class DevLangsungAllWisata extends StatelessWidget {
         "gambar":
             "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/9f/a8/2018-02-02-01-34-02-largejpg.jpg?w=500&h=400&s=1",
         "rating": 4,
-        "views" : "5k",
+        "reviews" : "5k",
 
         "deskripsi":
             "Candi Borobudur adalah sebuah kompleks candi Buddha yang megah dan terkenal, terletak di Magelang, Jawa Tengah, Indonesia. Dibangun pada abad ke-9 oleh dinasti Sailendra, candi ini merupakan salah satu keajaiban arsitektur Buddha dan situs keagamaan terbesar di dunia. Borobudur memiliki struktur bertingkat dengan tujuh tingkat teras dan candi utama di puncaknya. Di dinding-dindingnya terdapat relief yang menceritakan kisah-kisah Buddha dan ajaran-ajaran Buddhis. Candi Borobudur juga telah diakui sebagai Situs Warisan Dunia UNESCO, mencerminkan kejayaan seni dan kepercayaan Buddha pada masa lalu. "
@@ -34,7 +34,7 @@ class DevLangsungAllWisata extends StatelessWidget {
         "lokasi": "Jl. Pemuda, Semarang",
         "jarak": "15 KM",
         "harga": "15.000",
-        "views" : "20k",
+        "reviews" : "20k",
 
         "gambar":
             "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/aa/3c/c9/photo3jpg.jpg?w=500&h=-1&s=1",
@@ -47,7 +47,7 @@ class DevLangsungAllWisata extends StatelessWidget {
         "lokasi": "Bakal Buntu, Banjarnegara",
         "jarak": "75 KM",
         "harga": "20.000",
-        "views" : "100",
+        "reviews" : "100",
 
         "gambar":
             "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/76/9a/93/dataran-tinggi-dieng.jpg?w=500&h=400&s=1",

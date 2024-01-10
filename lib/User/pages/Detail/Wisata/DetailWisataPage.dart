@@ -104,7 +104,7 @@ class _DetailWisataPageState extends State<DetailWisataPage> {
                                           .toString() ??
                                       ""),
                                   Text(" ("),
-                                  Text(widget.tempatWisataData?["views"]
+                                  Text(widget.tempatWisataData?["reviews"]
                                           .toString() ??
                                       ""),
                                   Text(" review)"),
