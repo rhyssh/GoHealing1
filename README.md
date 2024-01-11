@@ -1,7 +1,9 @@
 # GASCUY TEAM
 <br>
 
+
 # GoHealing
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/icon.png?raw=true)
 
 GoHealing adalah aplikasi revolusioner yang menghadirkan kemudahan dalam merencanakan 
 dan mengatur perjalanan rekreasi pengguna. Beberapa fitur yang dimiliki aplikasi ini adalah :
@@ -36,3 +38,20 @@ Beberapa fitur utama pada aplikasi kami adalah :
 1. Pemesanan Tiket 
 <br>
 2. Pemesanan Souvenir
+<br>
+<br>
+# LAYOUT APLIKASI
+<br>
+Berikut adalah menu utama dari aplikasi :
+
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+Sebelah kiri adalah rencana desain yang sedang progress, sebelah kanan adalah progress yang sedang dikerjakan. 
+<br>
+Memiliki 5 navigasi, diantaranya :
+1. Home <br>
+2. Souvenir <br>
+3. Wisata <br>
+4. History <br>
+5. Profile 
+
+
