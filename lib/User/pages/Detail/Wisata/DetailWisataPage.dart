@@ -111,6 +111,8 @@ class _DetailWisataPageState extends State<DetailWisataPage> {
                                 ],
                               ),
                               Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     "HTM",
@@ -121,21 +123,31 @@ class _DetailWisataPageState extends State<DetailWisataPage> {
                                       fontSize: 25,
                                     ),
                                   ),
-                                  Text("   "),
                                   Text(
                                     " Rp ${widget.tempatWisataData?["harga"].toString() ?? "0"}",
                                     style: TextStyle(
                                       color: Color(0xFF2839CD),
-                                      fontSize: 40,
+                                      fontSize: 35,
                                     ),
                                   ),
+                                  Text("      "),
+                                  CircleAvatar(
+                                      backgroundColor: Color(0xFF2839CD),
+                                      child: IconButton(
+                                          onPressed: () {
+                                            print("chat");
+                                          },
+                                          icon: Icon(
+                                            Icons.chat,
+                                            color: Colors.white,
+                                          )))
                                 ],
                               ),
                               SizedBox(
                                 height: 5,
                               ),
                               Text(
-                                "Candi Borobudur adalah sebuah kompleks candi Buddha yang megah dan terkenal, terletak di Magelang, Jawa Tengah, Indonesia. Dibangun pada abad ke-9 oleh dinasti Sailendra, candi ini merupakan salah satu keajaiban arsitektur Buddha dan situs keagamaan terbesar di dunia. Borobudur memiliki struktur bertingkat dengan tujuh tingkat teras dan candi utama di puncaknya. Di dinding-dindingnya terdapat relief yang menceritakan kisah-kisah Buddha dan ajaran-ajaran Buddhis. Candi Borobudur juga telah diakui sebagai Situs Warisan Dunia UNESCO, mencerminkan kejayaan seni dan kepercayaan Buddha pada masa lalu. Lihat lebih detail .......",
+                                widget.tempatWisataData?["deskripsi"],
                                 style: TextStyle(),
                                 textAlign: TextAlign.justify,
                                 maxLines: seeMoreClicked ? null : 8,

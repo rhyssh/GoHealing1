@@ -113,7 +113,7 @@ class _DetailSouvenirPageState extends State<DetailSouvenirPage> {
                                 height: 5,
                               ),
                               Text(
-                                "Candi Borobudur adalah sebuah kompleks candi Buddha yang megah dan terkenal, terletak di Magelang, Jawa Tengah, Indonesia. Dibangun pada abad ke-9 oleh dinasti Sailendra, candi ini merupakan salah satu keajaiban arsitektur Buddha dan situs keagamaan terbesar di dunia. Borobudur memiliki struktur bertingkat dengan tujuh tingkat teras dan candi utama di puncaknya. Di dinding-dindingnya terdapat relief yang menceritakan kisah-kisah Buddha dan ajaran-ajaran Buddhis. Candi Borobudur juga telah diakui sebagai Situs Warisan Dunia UNESCO, mencerminkan kejayaan seni dan kepercayaan Buddha pada masa lalu. Lihat lebih detail .......",
+                                widget.dataSouvenir?["deskripsi"],
                                 style: TextStyle(),
                                 textAlign: TextAlign.justify,
                                 maxLines: seeMoreClicked ? null : 8,
