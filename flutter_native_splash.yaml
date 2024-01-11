@@ -1,0 +1,10 @@
+flutter_native_splash:
+  color: "#000000"
+  image: assets/icon/icon.jpg
+  delay: 2 # Menunda tampilan splash screen selama 2 detik
+
+  android_12:
+    image: assets/icon/icon.jpg
+    color: "#000000"
+    fade_in_duration: 300
+    fade_out_duration: 300
