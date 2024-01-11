@@ -32,14 +32,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.blue,
-        title: Text(
-          "LOGIN",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-      ),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
@@ -47,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 20,
+                  height: 60,
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 30),
@@ -70,16 +62,17 @@ class _LoginPageState extends State<LoginPage> {
                     Positioned(
                       top: 50, // Sesuaikan nilai ini sesuai kebutuhan
                       child: Container(
+                        width: 125,
+                        height: 125,
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(50),
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 1,
-                            )),
-                        child: Icon(
-                          Icons.person,
-                          size: 100,
+                          image: DecorationImage(
+                              image: AssetImage('assets/img/icon.jpg')),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(100),
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 1,
+                          ),
                         ),
                       ),
                     ),

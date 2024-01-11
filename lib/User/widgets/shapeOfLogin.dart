@@ -6,7 +6,7 @@ class RPSCustomPainter extends CustomPainter {
     // Layer 1
 
     Paint paint_fill_0 = Paint()
-      ..color = const Color.fromARGB(255, 126, 136, 225)
+      ..color = Color.fromARGB(255, 125, 136, 225)
       ..style = PaintingStyle.fill
       ..strokeWidth = size.width * 1.1
       ..strokeCap = StrokeCap.round
@@ -26,18 +26,18 @@ class RPSCustomPainter extends CustomPainter {
     // Layer 1
 
     Paint paint_stroke_0 = Paint()
-      ..color = const Color.fromARGB(255, 126, 136, 225)
+      ..color = Color.fromARGB(255, 125, 136, 225)
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.01
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..maskFilter =
-          MaskFilter.blur(BlurStyle.normal, 5.0); // Menambahkan efek bayangan
+          MaskFilter.blur(BlurStyle.normal, 6.0); // Menambahkan efek bayangan
 
     canvas.drawPath(path_0, paint_stroke_0);
 
     Paint paint_stroke_1 = Paint()
-      ..color = const Color.fromARGB(255, 126, 136, 225)
+      ..color = Color.fromARGB(255, 125, 136, 225)
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.01
       ..strokeCap = StrokeCap.round
