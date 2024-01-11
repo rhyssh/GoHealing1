@@ -5,7 +5,7 @@ import 'package:gohealing/User/pages/Detail/Wisata/DetailWisataPage.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
 import 'package:gohealing/data/DBwisata.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
-import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
+import 'package:gohealing/User/widgets/Card/WidgetCardWisata.dart';
 import 'package:google_fonts/google_fonts.dart';
 class ListWisataPage extends StatefulWidget {
   const ListWisataPage({Key? key}) : super(key: key);

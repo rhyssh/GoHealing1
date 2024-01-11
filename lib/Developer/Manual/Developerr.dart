@@ -1,8 +1,8 @@
 
 import "package:flutter/material.dart";
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
-import 'package:gohealing/Developer/DevSouvenirPage.dart';
-import 'package:gohealing/Developer/DevWisataPage.dart';
+import 'package:gohealing/Developer/Manual/DevSouvenirPage.dart';
+import 'package:gohealing/Developer/Manual/DevWisataPage.dart';
 
 
 class Developerr extends StatefulWidget {

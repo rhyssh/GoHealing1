@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
 import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
-import "package:gohealing/Developer/DevSouvenirPage.dart";
-import 'package:gohealing/Developer/DevWisataPage.dart';
-import "package:gohealing/Developer/Developerr.dart";
+import 'package:gohealing/Developer/Manual/DevSouvenirPage.dart';
+import 'package:gohealing/Developer/Manual/DevWisataPage.dart';
+import 'package:gohealing/Developer/Manual/Developerr.dart';
 import "package:gohealing/User/pages/ListWisataPage.dart";
 import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
 import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";

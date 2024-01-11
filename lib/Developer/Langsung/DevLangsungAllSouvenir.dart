@@ -9,38 +9,38 @@ class DevLangsungAllSouvenir extends StatelessWidget {
         "gambar":
             "https://1.bp.blogspot.com/--mOMBc-2lCA/XP8-5HxcS1I/AAAAAAABZVg/fSD2n_GPsJA5o536irWaUpyqdb6jNfbEwCLcBGAs/s1280/souvenir-gantungan-kunci-borobudur.jpg",
         "harga": "10.000",
-        "judulSouvenir": "Gantungan Kunci Borobudur",
+        "judulSouvenir": "Gantungan YAYYAr",
         "terjual": "20.000",
         "deskripsi":
             "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
       },
-      {
-        "gambar":
-            "https://i0.wp.com/penginapandieng.net/wp-content/uploads/2017/06/purwaceng.jpg?w=720&ssl=1",
-        "harga": "30.000",
-        "judulSouvenir": "Purwaceng Khas Dieng",
-        "terjual": "600",
-        "deskripsi":
-            "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
-      },
-      {
-        "gambar":
-            "https://down-id.img.susercontent.com/file/eda4a63b7cb763e9b10b17aadd13db3e",
-        "harga": "20.000",
-        "judulSouvenir": "Gantungan Kunci Kelenteng Sam Po Kong",
-        "terjual": "10.230",
-        "deskripsi":
-            "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
-      },
-      {
-        "gambar":
-            "https://jejakpiknik.com/wp-content/uploads/2018/10/smg-4-1-630x380.jpg",
-        "harga": "35.000",
-        "judulSouvenir": "Gelas Miniatur Tugu Muda",
-        "terjual": "100.230",
-        "deskripsi":
-            "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
-      },
+      // {
+      //   "gambar":
+      //       "https://i0.wp.com/penginapandieng.net/wp-content/uploads/2017/06/purwaceng.jpg?w=720&ssl=1",
+      //   "harga": "30.000",
+      //   "judulSouvenir": "Purwaceng Khas Dieng",
+      //   "terjual": "600",
+      //   "deskripsi":
+      //       "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
+      // },
+      // {
+      //   "gambar":
+      //       "https://down-id.img.susercontent.com/file/eda4a63b7cb763e9b10b17aadd13db3e",
+      //   "harga": "20.000",
+      //   "judulSouvenir": "Gantungan Kunci Kelenteng Sam Po Kong",
+      //   "terjual": "10.230",
+      //   "deskripsi":
+      //       "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
+      // },
+      // {
+      //   "gambar":
+      //       "https://jejakpiknik.com/wp-content/uploads/2018/10/smg-4-1-630x380.jpg",
+      //   "harga": "35.000",
+      //   "judulSouvenir": "Gelas Miniatur Tugu Muda",
+      //   "terjual": "100.230",
+      //   "deskripsi":
+      //       "Gantungan kunci Candi Borobudur merupakan aksesori unik yang menggambarkan keindahan dan keagungan Candi Borobudur, salah satu keajaiban arsitektur Buddha di Indonesia. Terbuat dari bahan berkualitas tinggi, gantungan kunci ini menampilkan detail-detail halus dari relief-relief khas candi tersebut, menciptakan sentuhan artistik yang memikat. Dengan desain miniatur yang apik, gantungan kunci ini menjadi pilihan ideal sebagai suvenir atau koleksi bagi pecinta seni dan budaya."
+      // },
 
       // Tambahkan data lainnya sesuai kebutuhan
     ];

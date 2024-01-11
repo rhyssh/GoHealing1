@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gohealing/BottomConvexBarr/BottomConvexBarr.dart';
 import 'package:gohealing/User/pages/LoginPage/LoginPage.dart';
-import 'package:gohealing/User/widgets/WidgetCardWisata.dart';
+import 'package:gohealing/User/widgets/Card/WidgetCardWisata.dart';
 
 class DevWisataPage extends StatefulWidget {
   @override

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gohealing/User/pages/Detail/Souvenir/DetailSouvenirPage.dart';
 import 'package:gohealing/User/pages/Detail/Wisata/DetailWisataPage.dart';
-import 'package:gohealing/User/widgets/WidgetCardSouvenir.dart';
+import 'package:gohealing/User/widgets/Card/WidgetCardSouvenir.dart';
 import 'package:gohealing/data/DBsouvenir.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
 import 'package:google_fonts/google_fonts.dart';
