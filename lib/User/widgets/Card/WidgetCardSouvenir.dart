@@ -50,22 +50,25 @@ class WidgetCardSouvenir extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Container(
                       height: 60,
-                      width: 180,
+                      width: MediaQuery.of(context).size.width * (0.4),
                       child: Text(
                         judulSouvenir,
                         maxLines: 2,
                         overflow: TextOverflow.fade,
                         style: TextStyle(
-                          fontWeight: FontWeight.w900,
-                          fontSize: 16,
-                          fontFamily: GoogleFonts.poppins().fontFamily
-                        ),
+                            fontWeight: FontWeight.w900,
+                            fontSize: 16,
+                            fontFamily: GoogleFonts.poppins().fontFamily),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Text(
                       "Rp. $harga",
                       style: TextStyle(fontSize: 12),
@@ -75,7 +78,7 @@ class WidgetCardSouvenir extends StatelessWidget {
                     ),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          padding: EdgeInsets.only(left: 30, right: 30),
+                            padding: EdgeInsets.only(left: 30, right: 30),
                             backgroundColor: Color(0xFF18227B),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10))),

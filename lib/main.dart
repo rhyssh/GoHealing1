@@ -11,7 +11,7 @@ Future<void> main() async {
   );
 
   // Tambahkan penundaan 2 detik sebelum memanggil runApp
-  await Future.delayed(Duration(seconds: 2), () {
+  await Future.delayed(Duration(seconds: 1), () {
     runApp(MyApp());
   });
 }

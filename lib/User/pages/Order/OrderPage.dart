@@ -43,15 +43,25 @@ class _OrderPageState extends State<OrderPage> {
                       height: 50,
                       child: Row(
                         children: [
+                          SizedBox(width: MediaQuery.of(context).size.width * (0.35),),
                           Container(
                             alignment: Alignment.center,
                             child: Text(
                               "My Order",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: GoogleFonts.poppins().fontFamily, fontSize: 20),
+                                  fontFamily: GoogleFonts.poppins().fontFamily,
+                                  fontSize: 20),
                             ),
-                            width: MediaQuery.of(context).size.width * (0.88),
+                            width: MediaQuery.of(context).size.width * (0.25),
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: MediaQuery.of(context).size.width * (0.25),
+                            child: CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  "https://awsimages.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=600&q=90"),
+                            ),
                           )
                         ],
                       ),

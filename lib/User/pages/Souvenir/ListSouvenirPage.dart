@@ -34,7 +34,10 @@ class _ListSouvenirPageState extends State<ListSouvenirPage> {
           var _data = snapshot.data!.docs;
 
           return Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
+            padding: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width * (0.06),
+                right: MediaQuery.of(context).size.width * (0.06),
+                top: 40),
             child: Column(
               children: [
                 Container(
@@ -66,20 +69,9 @@ class _ListSouvenirPageState extends State<ListSouvenirPage> {
                           ],
                         ),
                         Center(
-                          child: IconButton(
-                            onPressed: () {
-                              print("mengklik profil pojok");
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => ProfilePage(),
-                                ),
-                              );
-                            },
-                            icon: Icon(
-                              Icons.person_2_sharp,
-                              size: 30,
-                            ),
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                "https://awsimages.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=600&q=90"),
                           ),
                         ),
                       ],

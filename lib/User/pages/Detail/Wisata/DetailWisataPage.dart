@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gohealing/User/pages/Detail/Souvenir/OfficialSouvenirPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailWisataPage extends StatefulWidget {
@@ -49,6 +50,25 @@ class _DetailWisataPageState extends State<DetailWisataPage> {
               },
             ),
           ),
+          Positioned(
+              top: 40,
+              right: 20,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xFF2839CD)),
+                  onPressed: () {
+                    print("klik official");
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => OfficialSouvenirPage(),
+                        ));
+                  },
+                  child: Text(
+                    "Official Souvenir",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.white),
+                  ))),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(

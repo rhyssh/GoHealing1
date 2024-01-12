@@ -25,7 +25,7 @@ class WidgetCardWisata extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
+        width: MediaQuery.of(context).size.width * (0.86),
         height: 140,
         decoration: BoxDecoration(
           color: Color(0xFFBFC4F0),
@@ -54,10 +54,14 @@ class WidgetCardWisata extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      namaTempat,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    Container(
+                      width: MediaQuery.of(context).size.width * (0.4),
+                      height: 30,
+                      child: Text(
+                        namaTempat,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
                     ),
                     Text(
                       lokasi,

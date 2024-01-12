@@ -1,121 +1,128 @@
-import "package:flutter/material.dart";
-import "package:gohealing/BottomConvexBarr/BottomConvexBarr.dart";
-import 'package:gohealing/Developer/Manual/DevSouvenirPage.dart';
-import 'package:gohealing/Developer/Manual/DevWisataPage.dart';
-import 'package:gohealing/Developer/Manual/Developerr.dart';
-import "package:gohealing/User/pages/ListWisataPage.dart";
-import "package:gohealing/User/pages/LoginPage/LoginPage.dart";
-import "package:gohealing/User/pages/RegisterPage/RegisterPage.dart";
+import 'package:flutter/material.dart';
+import 'package:gohealing/User/widgets/Slider/SliderHome.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
+}
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  Color textColor = Colors.blue;
+  late double Screen;
 
-  void changeColor() {
-    setState(() {
-      textColor = Colors.red;
-    });
-
-    // Delay 1 detik dan kembalikan warna ke biru
-    Future.delayed(Duration(seconds: 1), () {
-      setState(() {
-        textColor = Colors.blue;
-      });
-    });
-  }
+  _HomePageState();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.blue[700],
-        title: Text(
-          "ROUTER SEMENTARA",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Developerr(),
-                    ));
-              },
-              icon: Icon(
-                Icons.logout,
-                color: Colors.amber[900],
-              ))
-        ],
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    Screen = MediaQuery.of(context).size.width;
+
+    return ListView(
+      children: [
+        Column(
           children: [
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.zero)),
-                onPressed: () {
-                  print("mengklik tombol");
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LoginPage(),
-                      ));
-                },
-                child: Text(
-                  "KE HALAMAN LOGIN",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.white),
-                )),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.zero)),
-                onPressed: () {
-                  print("mengklik tombol");
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => RegisterPage(),
-                      ));
-                },
-                child: Text(
-                  "KE HALAMAN REGISTER ",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.white),
-                )),
-            GestureDetector(
-              onTap: () {
-                // Aksi yang ingin diambil saat teks diklik
-                changeColor();
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => RegisterPage(),
-                    ));
-              },
-              child: Text(
-                'Klik saya!',
-                style: TextStyle(
-                  color: textColor,
-                  fontSize: 20.0,
-                ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: Screen * (0.06),
+                right: MediaQuery.of(context).size.width * (0.06),
+                top: 10,
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    alignment: Alignment.bottomCenter,
+                    height: 80,
+                    width: double.infinity,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            print("klik logo");
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: Image.asset(
+                              'assets/img/icon.jpg',
+                              height: 40,
+                              width: MediaQuery.of(context).size.width * (0.08),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * (0.04),
+                        ),
+                        Text(
+                          "GoHealing",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF051D41),
+                          ),
+                        ),
+                        SizedBox(
+                          width: Screen * (0.25),
+                        ),
+                        Container(
+                          alignment: Alignment.centerRight,
+                          child: Center(
+                            child: CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  "https://awsimages.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=600&q=90"),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height * (0.05)),
+            SliderHome(
+              tempatWisata: "Candi Borobudur",
+              jarak: "112",
+              harga: "250.000",
+            ),
+            Padding(
+                padding: EdgeInsets.only(
+                  left: Screen * (0.06),
+                  right: MediaQuery.of(context).size.width * (0.06),
+                  top: 40,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      color: Colors.amber,
+                      child: Padding(padding: EdgeInsets.only(left: Screen * (0.05), right: Screen * (0.05)),
+                      child: Column(
+                        children: [
+                          Text("ya"),
+                          Text("ya"),
+                          Text("ya"),
+                        ],
+                      ),
+                      )
+                    )
+                  ],
+                )),
+            SizedBox(
+              height: 100,
+            ),
+            SliderHome(
+              tempatWisata: "Candi Borobudur",
+              jarak: "112",
+              harga: "250.000",
+            ),
           ],
-        ),
-      ),
+        )
+      ],
     );
   }
 }

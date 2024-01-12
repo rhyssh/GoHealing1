@@ -7,6 +7,7 @@ import 'package:gohealing/data/DBwisata.dart';
 import 'package:gohealing/User/pages/ProfilePage/ProfilePage.dart';
 import 'package:gohealing/User/widgets/Card/WidgetCardWisata.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 class ListWisataPage extends StatefulWidget {
   const ListWisataPage({Key? key}) : super(key: key);
 
@@ -33,7 +34,10 @@ class _ListWisataPageState extends State<ListWisataPage> {
           var _data = snapshot.data!.docs;
 
           return Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
+            padding: EdgeInsets.only(
+                top: 40,
+                left: MediaQuery.of(context).size.width * (0.06),
+                right: MediaQuery.of(context).size.width * (0.06)),
             child: Column(
               children: [
                 Container(
@@ -65,22 +69,10 @@ class _ListWisataPageState extends State<ListWisataPage> {
                           ],
                         ),
                         Center(
-                          child: IconButton(
-                            onPressed: () {
-                              print("mengklik profil pojok");
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => ProfilePage(),
-                                ),
-                              );
-                            },
-                            icon: Icon(
-                              Icons.person_2_sharp,
-                              size: 30,
-                            ),
-                          ),
-                        ),
+                            child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://awsimages.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=600&q=90"),
+                        )),
                       ],
                     ),
                   ),
@@ -97,9 +89,7 @@ class _ListWisataPageState extends State<ListWisataPage> {
                     decoration: InputDecoration(
                       labelText: "Cari di sini",
                       labelStyle: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold
-                      ),
+                          color: Colors.white, fontWeight: FontWeight.bold),
                       fillColor: Color(0xFF7E88E1),
                       filled: true,
                       contentPadding:
