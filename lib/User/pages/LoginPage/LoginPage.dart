@@ -32,15 +32,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding:
+                const EdgeInsets.only(top: 5, left: 20, right: 20, bottom: 20),
             child: Column(
               children: [
-                SizedBox(
-                  height: 60,
-                ),
                 Container(
                   padding: EdgeInsets.only(top: 30),
                   child: Text(
@@ -60,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                       painter: RPSCustomPainter(),
                     ),
                     Positioned(
-                      top: 50, // Sesuaikan nilai ini sesuai kebutuhan
+                      top: 30, // Sesuaikan nilai ini sesuai kebutuhan
                       child: Container(
                         width: 125,
                         height: 125,
