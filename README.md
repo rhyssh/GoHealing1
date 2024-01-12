@@ -42,14 +42,18 @@ Beberapa fitur utama pada aplikasi kami adalah :
 <br>
 
 # LAYOUT APLIKASI
+Berikut kami tampilkan beberapa tampilan dari aplikasi yang kami desain ...
 <br>
 
-### Keterangan : Jika terdapat banner DEBUG di pojok kanan atas, berarti itu adalah tampilan dari hasil developer, namun jika tidak ada berarti itu merupakan tampilan dari Figma jadi rencana untuk didevelop. 
+### Keterangan : Jika terdapat banner DEBUG di pojok kanan atas, berarti itu adalah tampilan dari hasil developer, namun jika tidak ada berarti itu merupakan tampilan dari Figma yang rencananya akan didevelop juga...
 <br>
 
+### Login dan Register
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/login.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/register.jpg?raw=true)
 
-Berikut adalah menu utama dari aplikasi :
-<br>
+
+### Menu utama dari aplikasi :
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 
 Memiliki 5 navigasi, diantaranya :
@@ -60,22 +64,23 @@ Memiliki 5 navigasi, diantaranya :
 5. Profile
 <br>
 
-### Pencarian Souvenir :
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/ListSouvenir.jpg)
+### Pencarian Souvenir dan Detail Souvenir :
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenir.jpg)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/detailsouvenir.jpg)
 <br>
+Keterangan : Data yang ada di atas sudah terintegrasikan dengan Firebase, berupa nama Souvenir, deskripsi, harga, dan lain-lain. Rencananya data ini dikirim oleh penyedia wisata yang mendaftar pada aplikasi dan dimasukkan ke firebase oleh si Developer.
 
-### Pencarian Wisata :
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+### Pencarian Wisata dan Detail Wisata :
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/wisata.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/detailwisata.jpg?raw=true)
 <br>
+Keterangan : Data yang ada di atas sudah terintegrasikan dengan Firebase, berupa nama tempat, deskripsi, harga, dan lain-lain. Rencananya data ini dikirim oleh penyedia wisata yang mendaftar pada aplikasi dan dimasukkan ke firebase oleh si Developer.
 
 ### History :
-
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/history.jpg?raw=true)
 <br>
 
 ### Profile :
-
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 <br>
 
