@@ -40,18 +40,47 @@ Beberapa fitur utama pada aplikasi kami adalah :
 2. Pemesanan Souvenir
 <br>
 <br>
+
 # LAYOUT APLIKASI
 <br>
-Berikut adalah menu utama dari aplikasi :
 
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
-Sebelah kiri adalah rencana desain yang sedang progress, sebelah kanan adalah progress yang sedang dikerjakan. 
+### Keterangan : Jika terdapat banner DEBUG di pojok kanan atas, berarti itu adalah tampilan dari hasil developer, namun jika tidak ada berarti itu merupakan tampilan dari Figma jadi rencana untuk didevelop. 
 <br>
+
+
+Berikut adalah menu utama dari aplikasi :
+<br>
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+
 Memiliki 5 navigasi, diantaranya :
 1. Home <br>
 2. Souvenir <br>
 3. Wisata <br>
 4. History <br>
-5. Profile 
+5. Profile
+<br>
+
+Pencarian Souvenir :
+<br>
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+<br>
+
+Pencarian Wisata :
+<br>
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+<br>
+
+History :
+<br>
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+<br>
+
+Profile :
+<br>
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+<br>
+
 
 
