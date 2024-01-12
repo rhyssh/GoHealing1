@@ -43,17 +43,17 @@ class _OrderPageState extends State<OrderPage> {
                       height: 50,
                       child: Row(
                         children: [
-                          SizedBox(width: MediaQuery.of(context).size.width * (0.35),),
+                          SizedBox(width: MediaQuery.of(context).size.width * (0.3),),
                           Container(
                             alignment: Alignment.center,
                             child: Text(
-                              "My Order",
+                              "My History",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontFamily: GoogleFonts.poppins().fontFamily,
                                   fontSize: 20),
                             ),
-                            width: MediaQuery.of(context).size.width * (0.25),
+                            width: MediaQuery.of(context).size.width * (0.3),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
