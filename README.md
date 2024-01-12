@@ -37,6 +37,7 @@ efisien, serta menjelajahi wisata dengan lebih mudah dan menyenangkan
 - [PackagaDlutter](pub.dev) - Package-package yang mempermudah perancangan aplikasi
 - [AndroidStudio](https://developer.android.com/studio) - SDK dan simulator android
 - [Figma](https://developer.android.com/studio) - Perancangan UI dan UX
+- [Firebase](https://firebase.google.com/) - manajemen dan penyimpanan data real-time 
 
 
 # LAYOUT APLIKASI
