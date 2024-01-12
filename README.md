@@ -14,7 +14,7 @@ langsung disini.
 Aplikasi ini memiliki memiliki penyelesaian untuk 3 dari 17 topik SDGs PBB, diantaranya : 
 1. Poin ke-8, Decent Work and Economic Growth.
 Membantu UMKM masyarakat karena semakin ramai sebuah tempat wisata, maka 
-akan membuka banyak lapangan kerja baru untuk masyarakat sekitar juga. 
+akan membuka banyak lapangan kerja baru untuk masyarakat sekitar juga. Selain itu, dengan adanya aplikasi ini akan membantu banyak tempat-tempat wisata yang belum terlalu dikenal sehingga memberikan kesempatan bagi penyedia wisata untuk mendaftarkan tempat wisatanya ke aplikasi GoHealing, sehingga mereka bisa mempromosikan dan meramaikan tempat wisatanya. 
 2. Poin ke-13, Climate Action.
 Dengan mengurangi penggunaan kertas, kita dapat mengurangi deforestasi dan dampak 
 ekologisnya. Hal ini sejalan dengan upaya mengurangi emisi karbon yang dapat 
