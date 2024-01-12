@@ -85,6 +85,18 @@ Keterangan : Data yang ada di atas sudah terintegrasikan dengan Firebase, berupa
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/profil.jpg?raw=true)
 <br>
 
+# FIRESTORE DATABASE 
+Berikut kami lampirkan mengenai firestore database yang kami gunakan sekarang ini :
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/db.jpeg?raw=true)
+<br>
+Disini, kami sementara membuat 3 collection, yaitu untuk :
+- DB_order
+- DB_wisata
+- DB_souvenir
+<br>
+Yang dimana isi dari setiap collection ini nantinya akan diintegrasikan dengan layout pada aplikasi, sehingga aplikasi bisa menampilkan informasi secara fleksibel dan realtime dengan bantuan firestore database ini.
+
+
 # RENCANA HAL-HAL YANG AKAN DITAMBAHKAN :
 - Halaman Bagi Admin/Penyedia wisata (Login, Register, Dashboard, chat, Edit Informasi wisata dan souvenir)
 - Chat Pengguna dengan Admin tempat wisata
