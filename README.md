@@ -60,25 +60,22 @@ Memiliki 5 navigasi, diantaranya :
 5. Profile
 <br>
 
-Pencarian Souvenir :
+### Pencarian Souvenir :
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/ListSouvenir.jpg)
 <br>
+
+### Pencarian Wisata :
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 <br>
 
-Pencarian Wisata :
-<br>
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+### History :
+
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 <br>
 
-History :
-<br>
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
-<br>
+### Profile :
 
-Profile :
-<br>
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
 <br>
 
