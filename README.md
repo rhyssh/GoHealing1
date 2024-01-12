@@ -1,7 +1,6 @@
 # GASCUY TEAM
 <br>
 
-
 # GoHealing
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/icon.png?raw=true)
 
@@ -27,25 +26,24 @@ pelestarian habitat alami dan mempertahankan keanekaragaman hayati.
 Pada akhirnya, pengguna nantinya dapat menikmati pengalaman memesan tiket yang cepat dan 
 efisien, serta menjelajahi wisata dengan lebih mudah dan menyenangkan
 
-Anggota tim kami terdiri dari
-1. Reiki Aziz Yoga Utama **(Ketua & Hacker)**
-2. Krisna Kukuh Wijaya **(Hustler)**
-3. Ahmad Aziz Fauzi **(Hacker)**
-4. Yulianto Aryaseta **(Hipster)**
-<br>
-Beberapa fitur utama pada aplikasi kami adalah :
-<br>
-1. Pemesanan Tiket 
-<br>
-2. Pemesanan Souvenir
-<br>
-<br>
+## Features
+
+- Pemesanan Tiket
+- Pemesanan Souvenir Official
+
+## Tech
+- [VSCODE](https://www.figma.com/) - Tools utama untuk mengoding tentunya
+- [FLUTTER](flutter.io) - Tools merancang aplikasi
+- [PackagaDlutter](pub.dev) - Package-package yang mempermudah perancangan aplikasi
+- [AndroidStudio](https://developer.android.com/studio) - SDK dan simulator android
+- [Figma](https://developer.android.com/studio) - Perancangan UI dan UX
+
 
 # LAYOUT APLIKASI
 Berikut kami tampilkan beberapa tampilan dari aplikasi yang kami desain ...
 <br>
 
-### Keterangan : Jika terdapat banner DEBUG di pojok kanan atas, berarti itu adalah tampilan dari hasil developer, namun jika tidak ada berarti itu merupakan tampilan dari Figma yang rencananya akan didevelop juga...
+### Keterangan : Jika terdapat banner DEBUG di pojok kanan atas, berarti itu adalah tampilan dari hasil developer, namun jika tidak ada berarti itu merupakan tampilan dari Figma yang rencananya akan didevelop juga...Berikut kami tampilkan progress yang sudah kami jalankan dan beberapa hal yang akan kami rencanakan kedepan :
 <br>
 
 ### Login dan Register
@@ -54,7 +52,7 @@ Berikut kami tampilkan beberapa tampilan dari aplikasi yang kami desain ...
 
 
 ### Menu utama dari aplikasi :
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/beranda.jpg?raw=true)
 
 Memiliki 5 navigasi, diantaranya :
 1. Home <br>
@@ -78,11 +76,17 @@ Keterangan : Data yang ada di atas sudah terintegrasikan dengan Firebase, berupa
 
 ### History :
 ![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/history.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/historynolog.jpg?raw=true)
 <br>
 
 ### Profile :
-![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/souvenirpage.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/profilenolog.jpg?raw=true)
+![alt text](https://github.com/Raturu0/GoHealing/blob/main/assets/readme/profil.jpg?raw=true)
 <br>
+
+# RENCANA HAL-HAL YANG AKAN DITAMBAHKAN :
+- Halaman Bagi Admin/Penyedia wisata (Login, Register, Dashboard, chat, Edit Informasi wisata dan souvenir)
+- Chat Pengguna dengan Admin tempat wisata
 
 
 
