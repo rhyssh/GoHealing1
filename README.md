@@ -37,7 +37,29 @@ efisien, serta menjelajahi wisata dengan lebih mudah dan menyenangkan
 - [PackagaDlutter](pub.dev) - Package-package yang mempermudah perancangan aplikasi
 - [AndroidStudio](https://developer.android.com/studio) - SDK dan simulator android
 - [Figma](https://developer.android.com/studio) - Perancangan UI dan UX
-- [Firebase](https://firebase.google.com/) - manajemen dan penyimpanan data real-time 
+- [Firebase](https://firebase.google.com/) - manajemen dan penyimpanan data real-time
+
+## Persiapan
+- ### Android Studio
+Download Android Studio dan beberapa SDK yang diperlukan sesuai dengan perangkat Anda. Anda dapat mendownload nya di  [sini](https://developer.android.com/studio). Setelah mendownload, jangan lupa untuk menambah environment ke system path sesuai dengan petunjuk.
+
+- ### Flutter 
+Download juga untuk Flutter nya di [sini](https://docs.flutter.dev/get-started/install). Pilih sesuai dengan perangkat Anda dan jangan lupa menambah environment bin ke system path Anda.
+
+## Instalasi
+- Fork repository kami atau clone dengan perintah :
+```sh
+git clone https://github.com/Raturu0/GoHealing.git
+```
+- Download dan dapatkan dependensi di file pubspec.yaml dengan perintah
+```sh
+flutter pub get
+```
+- Pilih device di bagian pojok kanan, lalu pilih sesuai dengan keinginan, bisa real device, chrome, atau simulator Android Studio
+- Jalankan aplikasi dengan perintah :
+```sh
+flutter run
+```
 
 
 # LAYOUT APLIKASI
