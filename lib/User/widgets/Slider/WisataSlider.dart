@@ -1,55 +1,86 @@
 import "package:flutter/material.dart";
 import 'package:carousel_slider/carousel_slider.dart';
-class SliderHome extends StatelessWidget {
-  final String tempatWisata;
-  final String jarak;
-  final String harga;
 
-  SliderHome(
-      {required this.tempatWisata, required this.jarak, required this.harga});
+
+class WisataSlider extends StatelessWidget {
+  final String tempatWisata1;
+  final String jarak1;
+  final String gambar1;
+  final String harga1;
+
+  final String tempatWisata2;
+  final String jarak2;
+  final String gambar2;
+  final String harga2;
+
+  final String tempatWisata3;
+  final String jarak3;
+  final String gambar3;
+  final String harga3;
+
+  WisataSlider({
+    required this.tempatWisata1,
+    required this.jarak1,
+    required this.harga1,
+    required this.gambar1,
+
+    required this.tempatWisata2,
+    required this.jarak2,
+    required this.harga2,
+    required this.gambar2,
+
+    required this.tempatWisata3,
+    required this.jarak3,
+    required this.harga3,
+    required this.gambar3,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
-      options: CarouselOptions(
-        height: 250,
-        viewportFraction: 0.7,
-        autoPlay: true,
-        autoPlayInterval: Duration(seconds: 4),
-        enlargeCenterPage: true,
-      ),
-      items: [
-        Sliderr(
-            gambar:
-                "https://backoffice.konstruksiindo.id/images/posts/large/1689666990_bb8391f730ba479baf81.jpeg",
-            tempatWisata: "Candi Borobudur",
-            jarak: "112",
-            harga: harga),
-        Sliderr(
-            gambar:
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/9f/a8/2018-02-02-01-34-02-largejpg.jpg?w=500&h=400&s=1",
-            tempatWisata: "Gedung Lawang Sewu",
-            jarak: "10",
-            harga: "50.000"),
-        Sliderr(
-            gambar:
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/76/9a/93/dataran-tinggi-dieng.jpg?w=500&h=400&s=1",
-            tempatWisata: "Dieng Plateau",
-            jarak: "75",
-            harga: "20.000"),
+    return Column(
+      children: [
+        CarouselSlider(
+          options: CarouselOptions(
+            height: 250,
+            viewportFraction: 0.7,
+            autoPlay: true,
+            autoPlayInterval: Duration(seconds: 4),
+            enlargeCenterPage: true,
+          ),
+          items: [
+            WisataSlide(
+              gambar: gambar1,
+              tempatWisata: tempatWisata1,
+              jarak: jarak1,
+              harga: harga1,
+            ),
+            WisataSlide(
+              gambar: gambar2,
+              tempatWisata: tempatWisata2,
+              jarak: jarak2,
+              harga: harga2,
+            ),
+            WisataSlide(
+              gambar: gambar3,
+              tempatWisata: tempatWisata3,
+              jarak: jarak3,
+              harga: harga3,
+            ),
+          ],
+        ),
       ],
     );
   }
 }
 
-class Sliderr extends StatelessWidget {
-  const Sliderr({
-    super.key,
+class WisataSlide extends StatelessWidget {
+  const WisataSlide({
+    Key? key,
     required this.tempatWisata,
     required this.jarak,
     required this.harga,
     required this.gambar,
-  });
+  }) : super(key: key);
 
   final String tempatWisata;
   final String jarak;
@@ -88,8 +119,7 @@ class Sliderr extends StatelessWidget {
                       tempatWisata,
                       overflow: TextOverflow.ellipsis,
                       maxLines: 2,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
                 ],
@@ -113,8 +143,7 @@ class Sliderr extends StatelessWidget {
                 ),
                 Text(
                   "Rp. ${harga}",
-                  style: TextStyle(
-                      color: Color(0xFF2839CD), fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Color(0xFF2839CD), fontWeight: FontWeight.bold),
                 )
               ],
             ),
@@ -124,6 +153,8 @@ class Sliderr extends StatelessWidget {
     );
   }
 }
+
+
 
 class SlideContainer extends StatelessWidget {
   final Widget content;
